@@ -31,5 +31,9 @@ public class CalculatorController {
         return calculatorService.divide(request.getA(), request.getB());
     }
 
+    @PostMapping("/modulus")
+    public int modulus(@RequestBody OperationRequest request) {
+        return calculatorService.modulus(request.getA(), request.getB());
+    }
 
 }

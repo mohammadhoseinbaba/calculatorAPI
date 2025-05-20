@@ -17,9 +17,16 @@ public class CalculatorService {
     }
 
     public double divide(int a, int b) {
-        if(b==0){
+        if (b == 0) {
             throw new ArithmeticException("Can not divide by zero");
         }
-        return (double) a/b;
+        return (double) a / b;
+    }
+
+    public int modulus(int a, int b) {
+        if (b == 0) {
+            throw new ArithmeticException("Can not perform modulus with zero");
+        }
+        return a % b;
     }
 }
